@@ -17,7 +17,7 @@ public:
 	int ip = 0x0;
 	int i = 0x0;
 	
-	std::array<int, 6> r;
+	std::array<int, 6> r; // r0, r1, r2, r3, CS, DS
 
 	int fl = 0x0;
 
@@ -45,7 +45,7 @@ public:
 	};
 
 	CPU() :
-		r ({ { 0, 0, 0, 0, 0, 0x10 } }) // Order: r0, r1, r2, r3,  // ds -> set to 0x10
+		r ({ { 0, 0, 0, 0, 0, 0x10 } }) // Order: r0, r1, r2, r3, cs, ds	// ds -> set to 0x10
 	{
 		
 	}
