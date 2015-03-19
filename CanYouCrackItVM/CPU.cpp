@@ -83,6 +83,7 @@ void CPU::Exec(unsigned char* bytesToExec, int dwLen)
 
 				break;
 			case CPU::HLT:
+				printf("HLT\n");
 				this->HLT_CPU();
 
 				break;
@@ -150,6 +151,7 @@ void CPU::Exec(unsigned char* bytesToExec, int dwLen)
 
 				break;
 			case CPU::HLT:
+				printf("HLT\n");
 				this->HLT_CPU();
 
 				break;
